@@ -1,0 +1,81 @@
+body{
+	/*font-family:'helvetica_lt_stdregular', Helvetica, Arial, sans-serif;*/
+	/*font-family:Helvetica, Arial, sans-serif;*/
+	background-color:#efefef;
+	color:#666666;
+	font-size:13px !important;
+	overflow:hidden;
+}
+a{
+	text-decoration:none;
+	color:#666666;
+}
+a:hover{
+	color:#EC1B27;
+}
+.tabla{
+	width:100%;
+	display:table;
+}
+
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+
+
+.transparente{
+
+	background-image:url(../imagenes/permanente/transparente.png);
+
+}
+
+.curso{
+	width:960px;
+	height:550px;
+	overflow:hidden;
+	position:relative;
+	z-index:0;
+	background-color:#FFF;
+	margin:auto;
+}
+
+.curso #intro{
+	position:absolute;
+	left:50%;
+	z-index:100;
+}
+
+.curso .flecha{
+	position:absolute;
+	z-index:9999 !important;	
+	cursor:pointer;
+}
+
+.curso .secciones{
+	position:absolute;
+	height:550px;
+	overflow:visible;
+	top: 0;
+	left: 0;
+}
+/*
+.curso .secciones .seccion:first-child{
+	left:0px;
+}*/
+.curso .secciones .seccion{
+	overflow:hidden;
+	width:960px;
+	height:550px;
+	position:absolute;
+}
+
+.seccion div{
+	position:absolute;
+	background-repeat: no-repeat;
+}
+.siguiente-diapositiva,.anterior-diapositiva,.ir-a-diapositiva,.boton{
+	cursor:pointer;
+}

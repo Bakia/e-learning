@@ -1,0 +1,24 @@
+<krpano version="1.0.8.14" onstart="js(listo());">
+	<plugin name="sonido"
+        url="audio/soundinterface.swf"
+        alturl="audio/soundinterface.js"
+        preload="true"
+        rootpath=""
+        volume="1.0"
+        mute="false"
+        />
+		
+	
+	<action name="playSong">
+		
+		set(currentsong,'audio/%1.mp3');
+		
+		playsound(sonido,get(currentsong), 1,js(terminoaudio()));
+
+	</action>
+	<action name="stopSong">
+		pausesound(sonido);
+	</action>
+
+
+</krpano>
