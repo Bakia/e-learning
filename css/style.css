@@ -1,4 +1,4 @@
-/*EJEMPLO DE INCLUSION DE FUENTE */
+/* EJEMPLO DE INCLUSION DE FUENTE */
 
 /*@font-face{
 	font-family: 'Museo Sans 700' , Arial , sans-serif;
@@ -24,8 +24,18 @@ img{
 	position: absolute;
 }
 
+/****** Para declarar el alto y ancho de los videos del e-learning ******/
+/*
+	.video-js .vjs-tech {
+		height: px !important;
+		width: px !important;
+	}
+*/
+
+
+
 /*		INICIO ESTILOS MODULO 1		*/
 
 	
 
-/*		FIN ESTILOS MODULO 1		*/
+/*		FIN ESTILOS MODULO 1		
