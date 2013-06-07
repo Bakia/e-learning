@@ -1,7 +1,7 @@
 body{
 	/*font-family:'helvetica_lt_stdregular', Helvetica, Arial, sans-serif;*/
 	/*font-family:Helvetica, Arial, sans-serif;*/
-	background-color: #efefef;
+	background-color: #f4f4f4;
 	color: #666666;
 	font-size: 13px !important;
 	overflow: hidden;
@@ -15,7 +15,7 @@ a:hover{
 }
 
 #cortinaCarga {
-	background-color: #efefef;
+	background-color: #f4f4f4;
 	height: 100%;
 	left: 0;
 	position: absolute;

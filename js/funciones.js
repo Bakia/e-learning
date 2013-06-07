@@ -4,7 +4,8 @@ var currentAudio = "";
 /*============================== 
 	SI NO HAY AUDIOS: 
 	- DESCOMENTAR LAS SIGIUENTES LINEAS 
-	- COMENTAR EL JAVASCRIPT DE PANO DE CADA HTML 
+	- COMENTAR EL JAVASCRIPT DE SOUNDMANAGER EN EL HEADER
+	- COMENTAR EL JAVASCRIPT DE AUDIOS EN EL HEADER
 ==============================*/
 /*
 $(document).ready(function(e) {
@@ -20,16 +21,20 @@ function playSong(){
 
 function listo(){
 	if(preload){
-		$("body").queryLoader2({
-			barColor: "#6c1f7f",
-			backgroundColor: "#ffffff",
-			onComplete:init,
-			percentage: true,
-			barHeight: 1,
-			completeAnimation: "grow",
-			minimumTime: 500
+		$("body").jpreLoader({
+			showSplash: true,
+			showPercentage: false,
+			autoClose: false,
+			splashVPos: "7%",
+			loaderVPos: "10%",
+			closeBtnText: "INICIAR"
+		}, function onCompletePreload() {
+			$("#jpreOverlay").fadeOut(300, function () {
+				$(this).remove();
+			});
+			init();
 		});
-	} else {
+	}else{
 		init();
 	}
 }
@@ -48,6 +53,7 @@ function audios(cual){
 	playSong(cual);
 }
 function iniciar(){
+
 	$("#cortinaCarga").fadeOut(500);
 	/*		INICIO FUNCIONES MODULO 1		*/
 

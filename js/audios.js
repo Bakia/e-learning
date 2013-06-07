@@ -19,6 +19,7 @@ function terminoaudio(){
 
 function playSong(intt)
 {
+	
 	if(playerDeAudio !== undefined){
 		playerDeAudio.destruct();
 	}
