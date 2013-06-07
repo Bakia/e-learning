@@ -17,7 +17,7 @@ jQuery.migrateWarnings = [];
 
 // Show a message on the console so devs know we're active
 if ( !jQuery.migrateMute && window.console && console.log ) {
-	console.log("JQMIGRATE: Logging is active");
+	// console.log("JQMIGRATE: Logging is active");
 }
 
 // Set to false to disable traces that appear with warnings
@@ -36,9 +36,9 @@ function migrateWarn( msg) {
 		warnedAbout[ msg ] = true;
 		jQuery.migrateWarnings.push( msg );
 		if ( window.console && console.warn && !jQuery.migrateMute ) {
-			console.warn( "JQMIGRATE: " + msg );
+			// console.warn( "JQMIGRATE: " + msg );
 			if ( jQuery.migrateTrace && console.trace ) {
-				console.trace();
+				// console.trace();
 			}
 		}
 	}

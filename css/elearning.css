@@ -1,10 +1,10 @@
 body{
 	/*font-family:'helvetica_lt_stdregular', Helvetica, Arial, sans-serif;*/
 	/*font-family:Helvetica, Arial, sans-serif;*/
-	background-color:#efefef;
-	color:#666666;
-	font-size:13px !important;
-	overflow:hidden;
+	background-color: #efefef;
+	color: #666666;
+	font-size: 13px !important;
+	overflow: hidden;
 }
 a{
 	text-decoration:none;
@@ -13,6 +13,17 @@ a{
 a:hover{
 	color:#EC1B27;
 }
+
+#cortinaCarga {
+	background-color: #efefef;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+}
+
 .tabla{
 	width:100%;
 	display:table;
@@ -27,9 +38,7 @@ a:hover{
 
 
 .transparente{
-
-	background-image:url(../imagenes/permanente/transparente.png);
-
+	background-image:url(../img/e-learning/img_1x1.png);
 }
 
 .curso{
@@ -79,3 +88,5 @@ a:hover{
 .siguiente-diapositiva,.anterior-diapositiva,.ir-a-diapositiva,.boton{
 	cursor:pointer;
 }
+
+

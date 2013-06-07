@@ -1,6 +1,10 @@
-/* EJEMPLO DE INCLUSION DE FUENTE */
 
-/*@font-face{
+
+/* =====
+	EJEMPLO DE INCLUSION DE FUENTE
+===== */
+/*
+@font-face{
 	font-family: 'Museo Sans 700' , Arial , sans-serif;
 	src: url('../fonts/MuseoSans_700.otf');
 	src: url('../fonts/museosans_700-webfont.eot');
@@ -11,9 +15,12 @@
     font-weight: normal;
     font-style: normal;
 	font-weight: 700;
-}*/
+}
+*/
 
-/* 	ACA VAN TODOS LOS ESTILOS ESPECIFICOS QUE SE REPITEN A TRAVÉS DEL CURSO 	*/
+/* =====
+	ACA VAN TODOS LOS ESTILOS ESPECIFICOS QUE SE REPITEN A TRAVÉS DEL CURSO  
+===== */
 
 body{
 	overflow: visible !important;
@@ -24,7 +31,10 @@ img{
 	position: absolute;
 }
 
-/****** Para declarar el alto y ancho de los videos del e-learning ******/
+/* =====
+	Para declarar el alto y ancho de los videos del e-learning 
+===== */
+
 /*
 	.video-js .vjs-tech {
 		height: px !important;
@@ -34,8 +44,12 @@ img{
 
 
 
-/*		INICIO ESTILOS MODULO 1		*/
+/*==============================
+	INICIO ESTILOS MODULO 1
+==============================*/
 
 	
 
-/*		FIN ESTILOS MODULO 1		
+/*==============================
+	FIN ESTILOS MODULO 1
+==============================*/

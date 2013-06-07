@@ -2,30 +2,32 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-		<script src="javascript/jquery-1.9.1.min.js" type="text/javascript"></script>
-		<script src="javascript/jquery-migrate-1.1.0.js"></script>
-
-		<link rel="stylesheet" href="css/reset.css" type="text/css" />
-		<link rel="stylesheet" href="css/elearning.css" type="text/css" />
-		<link rel="stylesheet" href="css/style.css" type="text/css" />
-
-		<!--<script src="../shared/scormfunctions.js" type="text/javascript"></script>-->
-		<script src="javascript/jquery-ui-1.10.0.custom.min.js" type="text/javascript"></script>
-		<script src="javascript/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
-		<script src="javascript/jquery.timer.js" type="text/javascript"></script>
-		<script type="text/javascript" src="javascript/gs/TweenMax.min.js"></script>
-		<script src="javascript/preloader.js" type="text/javascript"></script>
-		<script src="javascript/jquery.tools.min.js" type="text/javascript"></script>
-
-
-		<script src="javascript/elearning.js" type="text/javascript"></script>
-		<script src="javascript/funciones.js" type="text/javascript"></script>
-		<script src="javascript/extendidas.js" type="text/javascript"></script>
-
-
-
 		<title></title>
+
+		<script src="js/jquery-1.9.1.min.js" 				type="text/javascript"></script>
+		<script src="js/jquery-migrate-1.1.0.js" 			type="text/javascript"></script>
+
+		<link href="css/reset.css" 							rel="stylesheet"  type="text/css" />
+		<link href="css/elearning.css" 						rel="stylesheet"  type="text/css" />
+		<link href="css/style.css" 							rel="stylesheet"  type="text/css" />
+		
+		<!-- <script src="./scormfunctions.js" 						type="text/javascript"></script> -->
+		<script src="js/jquery-ui-1.10.0.custom.min.js" 	type="text/javascript"></script>
+		<script src="js/jquery.ui.touch-punch.min.js" 		type="text/javascript"></script>
+		<script src="js/jquery.timer.js" 					type="text/javascript"></script>
+		<script src="js/gs/TweenMax.min.js"					type="text/javascript"></script>
+		<script src="js/preloader.js" 						type="text/javascript"></script>
+		<script src="js/jquery.tools.min.js" 				type="text/javascript"></script>
+		
+		<!-- Audios -->
+		<script src="audio/soundmanager2-jsmin.js" 			type="text/javascript"></script>
+
+		<!-- Funciones E-learning -->
+		<script src="js/elearning.js" 						type="text/javascript"></script>
+		<script src="js/funciones.js" 						type="text/javascript"></script>
+		<script src="js/extendidas.js" 						type="text/javascript"></script>
+		<script src="js/audios.js" 						type="text/javascript"></script>
+		
 		<script>
 			$(function() {
 				//$( ".secciones div" ).draggable({});
@@ -35,77 +37,49 @@
 	
 	<body>
 
-	<!-- Inicio Curso -->
-	<div id="" class="curso">
-	 	
-		<!-- Inicio Secciones -->
-	    <div class="secciones">
-	    
-			<div class="seccion" id="seccion0" data-audio="" data-flechas="">
-				<div class="fondo" style="background-color: yellow"></div>
-	    	</div>
+		<!-- Inicio Curso -->
+		<div id="" class="curso">
+		 	
+			<!-- Inicio Secciones -->
+		    <div class="secciones">
+		    	
+		    	<!-- Seccion -->
+				<div class="seccion" id="seccion0" data-audio="01" data-flechas="derecha">
+					<div class="fondo" style="background-color: yellow; height: 550px; width: 960px;"></div>
+		    	</div>
 
-	    	<div class="seccion" id="seccion1" data-audio="" data-flechas="">
-				<div class="fondo" style="background-color: blue"></div>
-	    	</div>
+		    	<!-- Seccion -->
+		    	<div class="seccion" id="seccion1" data-audio="01" data-flechas="ambas">
+					<div class="fondo" style="background-color: blue; height: 550px; width: 960px;"></div>
+		    	</div>
 
-	    	<div class="seccion" id="seccion2" data-audio="" data-flechas="">
-				<div class="fondo" style="background-color: red"></div>
-	    	</div>
+		    	<!-- Seccion -->
+		    	<div class="seccion" id="seccion2" data-audio="01" data-flechas="izquierda">
+					<div class="fondo" style="background-color: red; height: 550px; width: 960px;"></div>
+		    	</div>
 
-	    </div>
+		    </div>
 
-	    <!-- Fin Secciones -->
+		    <!-- Fin Secciones -->
 
 
-	    <!-- Inicio Flechas Curso -->
+		    <!-- Inicio Flechas Curso -->
 
-	    <div id="flechas" style="top: 245px; position: absolute;">	  
-			<div id="derecha" class="flecha" style="left: 910px; display:none;">
-		   		<img src="img/btn_seccion-sig.png">
-		  	</div>
-		  	<div id="izquierda" class="flecha" style="left: -2px; display:none;">
-		   		<img src="img/btn_seccion-ant.png">
-		  	</div>
+		    <div id="flechas" style="top: 245px; position: absolute;">	  
+				<div id="derecha" class="flecha" style="left: 910px; display:none;">
+			   		<img src="img/e-learning/btn_flecha-sig.png">
+			  	</div>
+
+			  	<div id="izquierda" class="flecha" style="left: -2px; display:none;">
+			   		<img src="img/e-learning/btn_flecha-ant.png">
+			  	</div>
+			</div>
+
+		    <!-- Fin Flechas Curso -->
+
 		</div>
-
-	    <!-- Fin Flechas Curso -->
-
-	</div>
-	<!-- Fin Curso -->
-
-	<script src="t.js" type="text/javascript"></script>
-	<div id="pano" style="width:1px; height:1px;position:absolute; z-index:1000"></div>
-	<script>
-		// <![CDATA[
-		var viewer = createPanoViewer({swf:"t.swf", id:"krpanoSWFObject", target:"pano"});
-		// set the default xml file
-		viewer.addVariable("xml", "t.xml");
-		// pass all parameters from the html file to the viewer
-		viewer.passQueryParameters();
-		// embed and start the viewer
-		viewer.embed();
-		function playSong(intt)
-		{
-			var krpano = document.getElementById("krpanoSWFObject");
-			if (!krpano || !krpano.get)
-			{
-				return "";
-			}
-			krpano.call("playSong(" + intt + ");");
-		}
-		function stopSong(){
-			var krpano = document.getElementById("krpanoSWFObject");
-			if (!krpano || !krpano.get)
-			{
-				return "";
-			}
-			krpano.call("stopSong();");
-		}
-		
-	// ]]>
-	</script>
-
+		<div id="cortinaCarga"></div>
+		<!-- Fin Curso -->
 
 	</body>
 </html>
